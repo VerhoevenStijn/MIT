@@ -1,0 +1,343 @@
+/*
+Colors used:
+- The greyish color in the main element: #f3f3f3
+- Where you see black it is indeed black :-)
+- space: #ab0707
+- techpolicy: #0033a0
+- climatechange: #328801
+- blockchain #027fab
+*/
+
+body{
+  font-family: helvetica neue;
+  font-size: 1.6rem;
+}
+
+header{
+  height: 11rem;
+  padding: 2rem;
+}
+
+header h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header nav ul{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: flex-start;
+}
+
+header nav ul li a{
+  margin-right: 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+article:nth-child(1){
+  background-color: black;
+  color: white;
+}
+
+article:nth-child(1) h3, article:nth-child(1) h2, article:nth-child(1) p{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top:2rem;
+}
+
+article:nth-child(1) h3{
+  font-weight: bold;
+}
+
+article:nth-child(1) h2{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+article:nth-child(1) p{
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+article:nth-child(1) img{
+  width: 100%;
+}
+
+main{
+  background-color: #f3f3f3;
+  display: grid;
+  gap: 2rem;
+}
+article:nth-child(2), article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6){
+  padding: 2rem;
+  background-color: white;
+}
+
+article:nth-child(2){
+  margin-top: -2rem;
+}
+article:nth-child(2) h3{
+  margin-bottom: 2rem;
+}
+
+article h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+article p{
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.expand{
+  display: block;
+  width: 10rem;
+  text-align: center;
+  border:0.1rem solid black;
+  padding: 1rem;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.space{
+  color:#ab0707;
+}
+
+.techpolicy{
+  color:#0033a0;
+}
+
+article:nth-child(3) h3{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.climatechange{
+  color:#328801;
+}
+
+article:nth-child(4) h3{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article:nth-child(5) h3{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.blockchain{
+  color:#027fab;
+}
+
+article:nth-child(6) h3{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+article:nth-child(6){
+  margin-bottom: 2rem;
+}
+aside{
+  display: none;
+}
+
+footer{
+  padding: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 1000px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+  }
+
+  header{
+    grid-column: 1/3;
+    grid-row: 1;
+    height:7rem;
+    position: relative;
+  }
+
+  header nav ul{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+  main{
+    grid-column: 1;
+    grid-row: 2;
+    width: 65vw;
+  }
+
+  aside{
+    background-color: #f3f3f3;
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 2rem;
+    width: 35vw;
+  }
+
+  aside p{
+    line-height: 2.5rem;
+  }
+  aside h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 0.5rem solid black;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  aside ul li p a{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 2rem;
+  }
+
+  aside ul li p{
+    margin-bottom: 2rem;
+  }
+
+  aside ul li .author{
+    text-decoration: underline;
+  }
+
+  aside .magazine{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    }
+  aside .magazine img{
+    height: 20rem;
+  }
+
+  aside .magazine a{
+    text-decoration: underline;
+  }
+
+  aside .magazine h4{
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  aside .team li{
+    display: grid;
+    grid-template-columns:0.1fr 1fr;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .team li:nth-child(1) img{
+    width: 8rem;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: block;
+  }
+
+  .team li:nth-child(1) p:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -0.5rem;
+  }
+
+  .team li:nth-child(1) p:nth-child(2) a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .team li:nth-child(1) p:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -2rem
+  }
+
+  .team li:nth-child(2) img{
+    width: 8rem;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: block;
+  }
+
+  .team li:nth-child(2) p:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -0.5rem;
+  }
+
+  .team li:nth-child(2) p:nth-child(2) a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .team li:nth-child(2) p:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -2rem
+  }
+
+  .team li:nth-child(3) img{
+    width: 8rem;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: block;
+  }
+
+  .team li:nth-child(3) p:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -0.5rem;
+  }
+
+  .team li:nth-child(3) p:nth-child(2) a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .team li:nth-child(3) p:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -2rem
+  }
+
+  .team li:nth-child(4) img{
+    width: 8rem;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: block;
+  }
+
+  .team li:nth-child(4) p:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -0.5rem;
+  }
+
+  .team li:nth-child(4) p:nth-child(2) a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .team li:nth-child(4) p:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -2rem
+  }
+
+  footer{
+    grid-column: 1/3;
+    text-align: center;
+  }
+}
